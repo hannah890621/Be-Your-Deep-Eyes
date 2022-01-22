@@ -49,3 +49,5 @@ output_path = "output_images"
 ```
 # Result
 ![img](result_image.png)
+![img](result_image2.png)
+![img](result_image3.png)
