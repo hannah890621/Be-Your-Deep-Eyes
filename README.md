@@ -23,7 +23,11 @@ https://drive.google.com/drive/folders/11uTS7lUSeHZpBSBbFEj7wX8kHZ0gNEWv?usp=sha
 ```
 !python train.py  --config=yolact_base_config --batch_size=1
 ```
-# Images
+- Pretrained Weights
+Please download pretrained weights and put the corresponding weights file in the ./weights:
+<br>
+https://drive.google.com/file/d/1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL/view?usp=sharing
+# Run on Images
 ```
 !rm output_images/testing_output -r
 !mkdir -p output_images/testing_output
@@ -32,7 +36,7 @@ file_path = "data/project/testing_data"
 output_path = "output_images/testing_output"
 !python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --images={file_path}:{output_path}
 ```
-# Video
+# Run on Video
 ```
 !rm output_video/testing_output -r
 !mkdir -p output_video/testing_output
