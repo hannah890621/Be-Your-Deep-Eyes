@@ -47,3 +47,5 @@ file_path = "data/testing_data"
 output_path = "output_images"
 !python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --images={file_path}:{output_path}
 ```
+# Result
+![img](result_image.png)
