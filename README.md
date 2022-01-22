@@ -1,8 +1,6 @@
 # B-Protector
-Here only for testing data files.
-<br>
-For getting completed files, please download files from: 
-<br>
+Here only for testing data files.  
+For getting completed files, please download files from:  
 https://drive.google.com/drive/folders/11uTS7lUSeHZpBSBbFEj7wX8kHZ0gNEWv?usp=sharing
 
 # Installation
@@ -18,15 +16,17 @@ https://drive.google.com/drive/folders/11uTS7lUSeHZpBSBbFEj7wX8kHZ0gNEWv?usp=sha
 %cd /yolact/external/DCNv2
 !python setup.py build develop
 ```
+
 # Training Data
-- Trained Weights
+- Training Weights
 ```
 !python train.py  --config=yolact_base_config --batch_size=1
 ```
-- Pretrained Weights
-Please download pretrained weights and put the corresponding weights file in the ./weights:
+- Pretrained Weights  
+Please download pretrained weights and put the corresponding weights file in the ` ./weights `:
+&emsp;&emsp;&emsp; https://drive.google.com/file/d/1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL/view?usp=sharing
 <br>
-https://drive.google.com/file/d/1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL/view?usp=sharing
+
 # Run on Images
 ```
 !rm output_images/testing_output -r
@@ -36,6 +36,7 @@ file_path = "data/project/testing_data"
 output_path = "output_images/testing_output"
 !python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --images={file_path}:{output_path}
 ```
+
 # Run on Video
 ```
 !rm output_video/testing_output -r
