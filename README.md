@@ -47,13 +47,3 @@ file_path = "data/testing_data"
 output_path = "output_images"
 !python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --images={file_path}:{output_path}
 ```
-
-# Run on Video
-```
-%cd /content/B-Protector/yolact
-!mkdir -p output_video
-
-file_path = '/content/B-Protector/yolact/test_video/test_video1.mp4'
-output_path = "output_video"
-!python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --video={file_path}:{output_path}
-```
