@@ -1,6 +1,6 @@
 # B-Protector
 Running testing data on Colaboratory, please click [` here `](https://colab.research.google.com/drive/1zX-Xrg19Cc8e_mQmhW7ObIwZMjkGrQWI?usp=sharing).  
-For getting completed files, please download files [` here `](https://drive.google.com/drive/folders/11uTS7lUSeHZpBSBbFEj7wX8kHZ0gNEWv?usp=sharing).  
+For getting completed files, please download files [` here `](https://drive.google.com/drive/folders/1HcFusrP61vnhyDfTPijeJPptXrPzORRF?usp=sharing).  
 - Example:   
 ![img](example_image.png)
 
