@@ -1,5 +1,6 @@
 # B-Protector
-Here only for testing data files.  
+Here for testing data on Colaboratory:  
+https://colab.research.google.com/drive/1zX-Xrg19Cc8e_mQmhW7ObIwZMjkGrQWI?usp=sharing  
 For getting completed files, please download files from:  
 https://drive.google.com/drive/folders/11uTS7lUSeHZpBSBbFEj7wX8kHZ0gNEWv?usp=sharing  
 - Example:   
@@ -26,22 +27,29 @@ https://drive.google.com/drive/folders/11uTS7lUSeHZpBSBbFEj7wX8kHZ0gNEWv?usp=sha
 ```
 - Pretrained Weights  
 Please download pretrained weights [` yolact_base_153_10000.pth `](https://drive.google.com/file/d/1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL/view?usp=sharing) and put the corresponding weights file in the ` ./weights `
+```
+%cd /content/B-Protector/yolact
+!mkdir -p weights
+%cd weights
+!gdown --id '1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL'
+```
 # Run on Images
 ```
-!rm output_images/testing_output -r
-!mkdir -p output_images/testing_output
+%cd /content/B-Protector/yolact
+!mkdir -p output_images
+!mkdir -p final_info
 
-file_path = "data/project/testing_data"
-output_path = "output_images/testing_output"
+file_path = "data/testing_data"
+output_path = "output_images"
 !python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --images={file_path}:{output_path}
 ```
 
 # Run on Video
 ```
-!rm output_video/testing_output -r
-!mkdir -p output_video/testing_output
+%cd /content/B-Protector/yolact
+!mkdir -p output_video
 
-file_path = "test_video/test_video.mp4"
-output_path = "output_video/testing_output"
+file_path = '/content/B-Protector/yolact/test_video/test_video1.mp4'
+output_path = "output_video"
 !python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --video={file_path}:{output_path}
 ```
