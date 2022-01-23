@@ -51,3 +51,13 @@ output_path = "output_images"
 ![img](result_image.png)
 ![img](result_image2.png)
 ![img](result_image3.png)
+
+# Text to Speech
+```
+from gtts import gTTS  
+  
+mytext = '前方有障礙物，請往左兩步。' 
+language = 'zh'
+myobj = gTTS(text=mytext, lang=language, slow=False) 
+myobj.save("output.mp3") 
+```
