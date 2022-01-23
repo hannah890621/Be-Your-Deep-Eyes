@@ -61,3 +61,6 @@ language = 'zh'
 myobj = gTTS(text=mytext, lang=language, slow=False) 
 myobj.save("output.mp3") 
 ```
+
+# B-Protector Demonstration video
+https://github.com/hannah890621/B-Protector/blob/main/display_video.mp4
