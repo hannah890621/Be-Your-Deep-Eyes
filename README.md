@@ -63,4 +63,5 @@ myobj.save("output.mp3")
 ```
 
 # B-Protector Demonstration video
-https://github.com/hannah890621/B-Protector/blob/main/display_video.mp4
+https://user-images.githubusercontent.com/69901137/150677833-c94cf6a2-a572-42ac-bd89-15c7c5ac2951.mp4
+
