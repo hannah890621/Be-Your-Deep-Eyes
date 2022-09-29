@@ -27,26 +27,23 @@ For getting complete files, please download files [` here `](https://drive.googl
 # Training Data
 - Training Weights
 ```
-!python train.py  --config=yolact_base_config --batch_size=1
+!python train.py --config=yolact_base_config
 ```
 - Pretrained Weights  
-Please download pretrained weights [` yolact_base_153_10000.pth `](https://drive.google.com/file/d/1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL/view?usp=sharing) and put the corresponding weights file in the ` ./weights `
+Please download pretrained weights [` yolact_edge_43_400000.pth `](https://drive.google.com/file/d/1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL/view?usp=sharing) and put the corresponding weights file in the ` ./weights `
 ```
 %cd /content/B-Protector/yolact
 !mkdir -p weights
 %cd weights
 !gdown --id '1-1oj2lMmGf7lqeURl24p0rLsxFJ4VNqL'
 ```
-# Run on Images
+# Run on Video
 ```
-%cd /content/B-Protector/yolact
-!mkdir -p output_images
-!mkdir -p final_info
+!mkdir -p results/output_video
 
-file_path = "data/testing_data"
-output_path = "output_images"
-!python eval.py --trained_model=weights/yolact_base_153_10000.pth --config=yolact_base_config --score_threshold=0.15 --top_k=15 --images={file_path}:{output_path}
-```
+file_path = "data/video/test_video.mp4"
+output_path = "results/output_video.mp4"
+!python eval.py --disable_tensorrt --config=yolact_edge_config --trained_model=weights/yolact_edge_43_400000.pth --score_threshold=0.3 --top_k=100 --video={file_path}:{output_path}```
 # Result
 ![img](result_image.png)
 ![img](result_image2.png)
@@ -62,8 +59,8 @@ myobj = gTTS(text=mytext, lang=language, slow=False)
 myobj.save("output.mp3") 
 ```
 
-# B-Protector Demonstration video
-https://user-images.githubusercontent.com/69901137/150776433-be7a127c-1f75-4d86-90f1-ffcf217fc89f.mp4
+# Demonstration video
+https://user-images.githubusercontent.com/69901137/192931918-060662e1-0618-4565-b80d-68a1e1e0be33.mp4
 
 
 
