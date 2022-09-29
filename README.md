@@ -1,6 +1,5 @@
 # Be Your Deep Eyes
-Running testing data on Colaboratory, please click [` here `](https://colab.research.google.com/drive/1zX-Xrg19Cc8e_mQmhW7ObIwZMjkGrQWI?usp=sharing).  
-For getting complete files, please download files [` here `](https://drive.google.com/drive/folders/1bLB9S-UIjCCLIHqkqjJ2_EVbtAzFYzrk?usp=sharing). 
+運用影像辨識YolactEdge，結合距離探測、語音警示pyttsx，並嵌入至Jetson Nano 中，期望借助資通訊科技的力量，創造有利視障人士的未來生活。 
 
 # Category  
 1. Person
