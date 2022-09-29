@@ -1,14 +1,22 @@
 # Be Your Deep Eyes
 Running testing data on Colaboratory, please click [` here `](https://colab.research.google.com/drive/1zX-Xrg19Cc8e_mQmhW7ObIwZMjkGrQWI?usp=sharing).  
-For getting complete files, please download files [` here `](https://drive.google.com/drive/folders/1bLB9S-UIjCCLIHqkqjJ2_EVbtAzFYzrk?usp=sharing).  
-# Labelme  
-1. Sidewalk  
-2. Traffic Lane  
-3. Crosswalk  
-4. Cars  
-5. Obstacles  
-6. People     
-![img](example_image.png)
+For getting complete files, please download files [` here `](https://drive.google.com/drive/folders/1bLB9S-UIjCCLIHqkqjJ2_EVbtAzFYzrk?usp=sharing). 
+
+# Category  
+1. Person
+2. Bicycle
+3. Car
+4. Motorcycle
+5. Train
+6. Lane
+7. Bus
+8. Fire Hydrant
+9. Stop Sign
+10. Sidewalk
+11. Truck
+12. Crossing
+13. Obstruction
+14. Traffic Light 
 
 # Installation
 - Install some other packages
