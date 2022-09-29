@@ -46,11 +46,6 @@ output_path = "results/output_video.mp4"
 !python eval.py --disable_tensorrt --config=yolact_edge_config --trained_model=weights/yolact_edge_43_400000.pth --score_threshold=0.3 --top_k=100 --video={file_path}:{output_path}
 ```
 
-# Result
-![img](result_image.png)
-![img](result_image2.png)
-![img](result_image3.png)
-
 # Text to Speech
 ```
 from gtts import gTTS  
