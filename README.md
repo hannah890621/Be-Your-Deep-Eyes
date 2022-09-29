@@ -28,7 +28,6 @@ Category
 Installation
 ---
 
-- Install some other packages
 ```
 !pip install cython
 !pip install opencv-python pillow pycocotools matplotlib
@@ -38,7 +37,7 @@ Installation
 
 Training Data
 ---
-- Training Weights
+
 ```
 !python train.py --config=yolact_base_config
 ```
